@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="js/react.js"></script>
+    <script src="js/react-dom.js"></script>
+    <script src="js/browser.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div id="example"></div>
+<script type="text/babel">
+    //创建一个组件
+    //组建的本质就是一个可以被反复使用的,带有特定功能的视图
+    var MyComponent=React.createClass({
+        render:function () {
+            return <h1>hello Component</h1>
+        }
+    })
+    ReactDOM.render(
+        <div>
+            <MyComponent></MyComponent>
+        </div>,
+        document.getElementById('example')
+    )
+</script>
+</body>
+</html>
